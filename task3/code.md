@@ -61,8 +61,7 @@ Explanation:
 - Minimum registrations = 20,000 ÷ 200 = 100 participants
 
 ## 5. Flowchart (Mermaid)
-```meramid
-
+```mermaid
 flowchart TD
     A([Start]) --> B[/Enter venue cost/]
     B --> C[/Enter equipment cost/]
