@@ -77,10 +77,7 @@ FINAL BILL     : Rs. 7064.24
 ```
 
 ## 5. Flowchart
-
-Mermaid Flowchart
-```meramid
-
+```mermaid
 flowchart TD
     A([Start]) --> B[/Enter number of products/]
     B --> C[/Enter product name, price, quantity and category/]
