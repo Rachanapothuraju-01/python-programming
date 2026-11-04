@@ -1,123 +1,118 @@
-# Student Performance Trend Analysis Using Python
+# Text Compression Using Character Runs – Python Program
 
 ## 1. Problem Statement
 
-Develop a Python program to analyze student performance across multiple examinations. The program should accept student marks in different subjects for multiple examinations, compare assessment scores, calculate improvements and declines, identify consistently weak subjects, and classify students based on their academic performance.
+Write a Python program to perform text compression using Run-Length Encoding (RLE).
 
-The system should:
+The program should:
 
-- Accept student details and examination marks.
-- Calculate the total and average marks for each examination.
-- Compare marks between examinations.
-- Identify improvement or decline in student performance.
-- Identify subjects in which students consistently score low marks.
-- Classify students into different performance categories based on their average marks.
+- Read a string from the user.
+- Group consecutive repeated characters.
+- Encode each group using the character followed by its count.
+- Calculate the original and compressed string lengths.
+- Compare both lengths.
+- If the encoded string is not shorter than the original string, display the original string as the better option.
 
 ## 2. Algorithm
 
 1. Start the program.
-2. Read the number of students and subjects.
-3. Read student names and subject names.
-4. Enter marks obtained by each student in the first examination.
-5. Enter marks obtained in the second examination.
-6. Calculate the total and average marks for both examinations.
-7. Calculate the improvement or decline in marks for each subject.
-8. Identify consistently weak subjects by checking whether marks are below 40 in both examinations.
-9. Classify students based on their average marks:
-   - 90 and above – Excellent
-   - 75 to 89 – Very Good
-   - 60 to 74 – Good
-   - 40 to 59 – Average
-   - Below 40 – Poor
-10. Display the performance analysis and classification.
-11. Stop the program.
+2. Read a string from the user.
+3. Initialize an empty encoded string.
+4. Set the count of the first character to 1.
+5. Compare each character with the next character.
+6. If both characters are the same, increase the count.
+7. Otherwise, add the character and its count to the encoded string.
+8. Repeat until all characters are processed.
+9. Calculate the original and encoded string lengths.
+10. Compare both lengths.
+11. If encoded length is smaller, display the compressed string.
+12. Otherwise, display the original string.
+13. Stop the program.
 
-## 3. Flowchart
-``` mermaid
-          START
-            |
-            v
-     Input Student Details
-            |
-            v
-     Input Subject Names
-            |
-            v
-   Enter Exam 1 and Exam 2 Marks
-            |
-            v
-    Calculate Total and Average
-            |
-            v
-     Compare Examination Marks
-            |
-            v
-   Identify Weak Subjects
-            |
-            v
-    Classify Student Performance
-            |
-            v
-      Display Analysis
-            |
-            v
-           STOP
+## 3. Python Source Code
+
 ```
-
-
+# Text Compression Using Character Runstext = input("Enter a string: ")encoded = ""count = 1for i in range(1, len(text)):    if text[i] == text[i - 1]:        count += 1    else:        encoded += text[i - 1] + str(count)        count = 1# Add the last character groupif len(text) > 0:    encoded += text[-1] + str(count)original_length = len(text)encoded_length = len(encoded)print("Original String:", text)print("Encoded String:", encoded)print("Original Length:", original_length)print("Encoded Length:", encoded_length)if encoded_length < original_length:    print("Compression is beneficial.")    print("Compressed Text:", encoded)else:    print("Compression is not beneficial.")    print("Better Text:", text)
 ```
 
 ## 4. Sample Input
 
-text
-
-```text
-Enter student name: Rahul
-
-Enter marks for First Examination:
-Python: 65
-Mathematics: 35
-English: 70
-Science: 45
-
-Enter marks for Second Examination:
-Python: 80
-Mathematics: 38
-English: 75
-Science: 60
+```
+Enter a string: aaabbbccccdd
 ```
 
 ## 5. Sample Output
 
-text
-
-```text
------ PERFORMANCE ANALYSIS -----
-
-Student Name: Rahul
-
-Subject-wise Performance:
-
-Python : 15 - Improved
-Mathematics : 3 - Improved
-English : 5 - Improved
-Science : 15 - Improved
-
-Consistently Weak Subjects:
-Mathematics
-
-First Exam Total: 215
-Second Exam Total: 253
-
-First Exam Average: 53.75
-Second Exam Average: 63.25
-
-Overall Trend: Improved
-
-Student Classification:
-Good
+```
+Original String: aaabbbccccdd
+Encoded String: a3b3c4d2
+Original Length: 12
+Encoded Length: 8
+Compression is beneficial.
+Compressed Text: a3b3c4d2
 ```
 
-## 6. Result
+## 6. Flowchart
+```mermaid
 
-Thus, the Python program for Student Performance Trend Analysis was successfully developed and executed. It compares examination marks, calculates improvements and declines, identifies consistently weak subjects, and classifies students based on their academic performance.
+flowchart TD
+    A([Start]) --> B[/Enter a string/]
+    B --> C[Initialize encoded = empty, count = 1]
+    C --> D[Set i = 1]
+    D --> E{i < length of string?}
+    E -- Yes --> F{Current character equals previous?}
+    F -- Yes --> G[Increase count]
+    F -- No --> H[Add previous character and count to encoded]
+    H --> I[Set count = 1]
+    G --> J[Increase i]
+    I --> J
+    J --> E
+    E -- No --> K[Add last character and count]
+    K --> L[Calculate original and encoded lengths]
+    L --> M{Encoded length < original length?}
+    M -- Yes --> N[/Display compressed string/]
+    M -- No --> O[/Display original string/]
+    N --> P([Stop])
+    O --> P
+```
+flowchart TD
+    A([Start]) --> B[/Enter a string/]
+    B --> C[Initialize encoded = empty, count = 1]
+    C --> D[Set i = 1]
+    D --> E{i < length of string?}
+    E -- Yes --> F{Current character equals previous?}
+    F -- Yes --> G[Increase count]
+    F -- No --> H[Add previous character and count to encoded]
+    H --> I[Set count = 1]
+    G --> J[Increase i]
+    I --> J
+    J --> E
+    E -- No --> K[Add last character and count]
+    K --> L[Calculate original and encoded lengths]
+    L --> M{Encoded length < original length?}
+    M -- Yes --> N[/Display compressed string/]
+    M -- No --> O[/Display original string/]
+    N --> P([Stop])
+    O --> P
+```
+
+## 7. Another Example (Compression Not Beneficial)
+
+Sample Input:
+
+```
+Enter a string: abcdef
+```
+
+Sample Output:
+
+```
+Original String: abcdef
+Encoded String: a1b1c1d1e1f1
+Original Length: 6
+Encoded Length: 12
+Compression is not beneficial.
+Better Text: abcdef
+```
+
+Conclusion: Run-Length Encoding reduces the text size when many consecutive characters are repeated. If the encoded string is longer, the original string is better.
