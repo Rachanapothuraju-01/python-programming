@@ -40,7 +40,7 @@ The program should:
 
 ## 3. Sample Input
 
-```
+```mermaid
 Enter number of products: 2
 
 Product 1
