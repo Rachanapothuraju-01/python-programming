@@ -133,5 +133,3 @@ Order Processing Completed.
 ```
 
 
-
-Thus, the Integrated E-Commerce Order Processing and Reconciliation System is successfully implemented using Python. It calculates discounts and revenue, processes dispatches and returns, detects order discrepancies, and generates the final inventory summary.
