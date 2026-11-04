@@ -99,8 +99,3 @@ flowchart TD
 ```
 
 
-## 7. Expected Result
-
-The program successfully calculates the retail bill for multiple products by applying category-specific taxes, threshold-based discounts, and maximum concession limits. It displays the subtotal, discount, tax, and final payable amount in an itemized invoice.
-
-Note: The tax rates and discount limits used here are sample values for the assignment. Actual rates can be changed according to the requirements.
