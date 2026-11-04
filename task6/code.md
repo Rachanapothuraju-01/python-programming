@@ -93,7 +93,6 @@ Order reconciliation completed.
 
 ## 5. Flowchart
 ```mermaid
-flowchart TD
     A([Start]) --> B[/Enter number of products/]
     B --> C[/Enter product details/]
     C --> D[Calculate total order amount]
