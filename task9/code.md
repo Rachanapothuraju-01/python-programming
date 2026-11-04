@@ -52,9 +52,7 @@ flowchart TD
     Q --> R([Stop])
 ```
 
-```
-
-## 5. Sample Input
+5.SAMPLE input
 
 ```
 Enter travel budget (INR): 100000
@@ -79,7 +77,7 @@ Enter exchange rate (INR): 85
 Enter conversion fee percentage: 2
 ```
 
-## 6. Sample Output
+6.SAMPLE OUTPUT
 
 ```
 ========== TRAVEL EXPENSE REPORT ==========
