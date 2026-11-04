@@ -67,6 +67,7 @@ Enter Overtime Rate per Hour: 200
 
 Enter Incentives: 3000
 ```
+```
 5. Sample Output
 ===== EMPLOYEE SALARY STATEMENT =====
 
@@ -82,6 +83,7 @@ Incentives: Rs. 3000.0
 ----------------------------------
 Gross Salary: Rs. 39500.0
 Total Deduction: Rs. 2450.0
+```
 
 ----------------------------------
 
