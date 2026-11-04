@@ -75,25 +75,8 @@ flowchart TD
     N --> P([Stop])
     O --> P
 ```
-flowchart TD
-    A([Start]) --> B[/Enter a string/]
-    B --> C[Initialize encoded = empty, count = 1]
-    C --> D[Set i = 1]
-    D --> E{i < length of string?}
-    E -- Yes --> F{Current character equals previous?}
-    F -- Yes --> G[Increase count]
-    F -- No --> H[Add previous character and count to encoded]
-    H --> I[Set count = 1]
-    G --> J[Increase i]
-    I --> J
-    J --> E
-    E -- No --> K[Add last character and count]
-    K --> L[Calculate original and encoded lengths]
-    L --> M{Encoded length < original length?}
-    M -- Yes --> N[/Display compressed string/]
-    M -- No --> O[/Display original string/]
-    N --> P([Stop])
-    O --> P
+
+    
 ```
 
 ## 7. Another Example (Compression Not Beneficial)
