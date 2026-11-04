@@ -52,7 +52,7 @@ flowchart TD
     Q --> R([Stop])
 ```
 
-5.SAMPLE input
+5.SAMPLE INPUT
 
 ```
 Enter travel budget (INR): 100000
