@@ -22,6 +22,28 @@ Develop a Python program for Campus Event Financial Planning. The program calcul
 14. Display the total expenses, sponsorship shortfall, participant contribution, and minimum registrations.
 15. Stop the program.
 
+## 5. Flowchart (Mermaid)
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter venue cost/]
+    B --> C[/Enter equipment cost/]
+    C --> D[/Enter catering cost/]
+    D --> E[/Enter transport cost/]
+    E --> F[/Enter certificate cost/]
+    F --> G[/Enter sponsorship amount/]
+    G --> H[/Enter participant cost and contribution/]
+    H --> I[Calculate total event cost]
+    I --> J[Calculate sponsorship shortfall]
+    J --> K[Calculate remaining amount]
+    K --> L{Contribution > Participant Cost?}
+    L -- Yes --> M[Calculate minimum registrations]
+    L -- No --> N[Break-even not possible]
+    M --> O[/Display financial report/]
+    N --> O
+    O --> P([Stop])
+```
+
+
 
 
 ## 3. Sample Input
@@ -60,56 +82,4 @@ Explanation:
 - Amount available per participant towards fixed costs = ₹200
 - Minimum registrations = 20,000 ÷ 200 = 100 participants
 
-## 5. Flowchart (Mermaid)
-```mermaid
-flowchart TD
-    A([Start]) --> B[/Enter venue cost/]
-    B --> C[/Enter equipment cost/]
-    C --> D[/Enter catering cost/]
-    D --> E[/Enter transport cost/]
-    E --> F[/Enter certificate cost/]
-    F --> G[/Enter sponsorship amount/]
-    G --> H[/Enter participant cost and contribution/]
-    H --> I[Calculate total event cost]
-    I --> J[Calculate sponsorship shortfall]
-    J --> K[Calculate remaining amount]
-    K --> L{Contribution > Participant Cost?}
-    L -- Yes --> M[Calculate minimum registrations]
-    L -- No --> N[Break-even not possible]
-    M --> O[/Display financial report/]
-    N --> O
-    O --> P([Stop])
-```
-
-
-## 6. Break-Even Concept
-
-Revenue
-
-Total cost
-
-Loss
-
-Profit
-
-10203040506050010001500Quantity$Q\*
-
-\\(Q^\*=\frac{F}{p-v}=\frac{\text{600}}{\text{35}-\text{15}}=\text{30}\\)
-
-Q\* is the break-even quantity where total revenue matches total cost.
-
-\\(F\\)
-
-$
-
-\\(v\\)
-
-$/unit
-
-\\(p\\)
-
-$/unit
-
-Give feedback
-
-Note: This program assumes venue, equipment, catering, transport and certificate amounts entered initially are fixed event expenses. The catering cost per participant is treated as an additional variable cost. The calculation finds the minimum registrations needed to cover costs after sponsorship.
+eated as an additional variable cost. The calculation finds the minimum registrations needed to cover costs after sponsorship.
