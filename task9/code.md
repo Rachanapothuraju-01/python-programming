@@ -51,6 +51,7 @@ flowchart TD
     P --> Q
     Q --> R([Stop])
 ```
+4. Sample Input
 Enter total travel budget in INR: 100000
 
 Enter number of expense categories: 4
@@ -79,7 +80,7 @@ Enter expense amount: 300
 Enter exchange rate to INR: 90
 Enter conversion fee percentage: 2
 ===== FINAL TRAVEL EXPENSE REPORT =====
-
+5. Sample Output
 Category: Hotel
 Original Amount: 200.0
 Converted Amount: Rs. 18000.0
