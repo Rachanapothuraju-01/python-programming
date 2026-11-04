@@ -29,29 +29,6 @@ The program should:
 12. Otherwise, display the original string.
 13. Stop the program.
 
-## 3. Python Source Code
-
-```
-# Text Compression Using Character Runstext = input("Enter a string: ")encoded = ""count = 1for i in range(1, len(text)):    if text[i] == text[i - 1]:        count += 1    else:        encoded += text[i - 1] + str(count)        count = 1# Add the last character groupif len(text) > 0:    encoded += text[-1] + str(count)original_length = len(text)encoded_length = len(encoded)print("Original String:", text)print("Encoded String:", encoded)print("Original Length:", original_length)print("Encoded Length:", encoded_length)if encoded_length < original_length:    print("Compression is beneficial.")    print("Compressed Text:", encoded)else:    print("Compression is not beneficial.")    print("Better Text:", text)
-```
-
-## 4. Sample Input
-
-```
-Enter a string: aaabbbccccdd
-```
-
-## 5. Sample Output
-
-```
-Original String: aaabbbccccdd
-Encoded String: a3b3c4d2
-Original Length: 12
-Encoded Length: 8
-Compression is beneficial.
-Compressed Text: a3b3c4d2
-```
-
 ## 6. Flowchart
 ```mermaid
 
@@ -76,26 +53,37 @@ flowchart TD
     O --> P
 ```
 
-    
-```
+4. Sample Input
 
-## 7. Another Example (Compression Not Beneficial)
+Enter Employee ID: 101
+Enter Employee Name: Ravi
 
-Sample Input:
+Enter Basic Salary: 30000
+Enter HRA percentage: 10
+Enter DA percentage: 5
 
-```
-Enter a string: abcdef
-```
+Enter Overtime Hours: 10
+Enter Overtime Rate per Hour: 200
 
-Sample Output:
+Enter Incentives: 3000
+5. Sample Output
+===== EMPLOYEE SALARY STATEMENT =====
 
-```
-Original String: abcdef
-Encoded String: a1b1c1d1e1f1
-Original Length: 6
-Encoded Length: 12
-Compression is not beneficial.
-Better Text: abcdef
-```
+Employee ID: 101
+Employee Name: Ravi
 
-Conclusion: Run-Length Encoding reduces the text size when many consecutive characters are repeated. If the encoded string is longer, the original string is better.
+Basic Salary: Rs. 30000.0
+HRA: Rs. 3000.0
+DA: Rs. 1500.0
+Overtime Payment: Rs. 2000.0
+Incentives: Rs. 3000.0
+
+----------------------------------
+Gross Salary: Rs. 39500.0
+Total Deduction: Rs. 2450.0
+
+----------------------------------
+
+Net Salary: Rs. 37050.0
+
+Payroll Calculation Completed.
