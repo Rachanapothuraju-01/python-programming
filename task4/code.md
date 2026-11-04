@@ -53,7 +53,7 @@ flowchart TD
     O --> P
 ```
 ```
-4. Sample Input
+ ## 4. Sample Input
 
 Enter Employee ID: 101
 Enter Employee Name: Ravi
@@ -68,7 +68,7 @@ Enter Overtime Rate per Hour: 200
 Enter Incentives: 3000
 ```
 ```
-5. Sample Output
+## 5. Sample Output
 ===== EMPLOYEE SALARY STATEMENT =====
 
 Employee ID: 101
