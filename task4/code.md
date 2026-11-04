@@ -52,7 +52,7 @@ flowchart TD
     N --> P([Stop])
     O --> P
 ```
-
+```
 4. Sample Input
 
 Enter Employee ID: 101
@@ -66,6 +66,7 @@ Enter Overtime Hours: 10
 Enter Overtime Rate per Hour: 200
 
 Enter Incentives: 3000
+```
 5. Sample Output
 ===== EMPLOYEE SALARY STATEMENT =====
 
