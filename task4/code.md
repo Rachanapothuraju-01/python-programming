@@ -70,7 +70,7 @@ Water Tariff Analysis Completed
 ```
 
 ## 5. Flowchart
-```meramid
+```mermaid
 flowchart TD
     A([Start]) --> B[/Enter number of households/]
     B --> C[Set fixed fee, slab rates and penalty]
