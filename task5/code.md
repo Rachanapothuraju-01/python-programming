@@ -10,7 +10,7 @@ Develop a Python program to analyze registration records stored as structured st
 4. Extract registration ID, name, email, and phone number.
 5. Detect duplicate registration IDs.
 6. Classify errors such as invalid ID, invalid name, invalid email, invalid phone number, and duplicate records.
-7. Display valid records and error classifications.
+7. Display valid records and error classification.
 
 ## 2. Algorithm
 
