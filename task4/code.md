@@ -5,7 +5,6 @@
 Develop a Python program to calculate water bills for multiple households based on their monthly water consumption. The program should apply different water tariff rates for different consumption slabs, add fixed charges and penalties for excessive water usage, and calculate the total bill for each household. It should also compare the consumption patterns of all households and identify households with excessive water usage.
 
 ## 2. Algorithm
-```mermaid
 1. Start the program.
 2. Read the number of households.
 3. Set the water consumption slab rates.
@@ -72,7 +71,6 @@ Water Tariff Analysis Completed
 
 ## 5. Flowchart
 ```meramid
-
 flowchart TD
     A([Start]) --> B[/Enter number of households/]
     B --> C[Set fixed fee, slab rates and penalty]
