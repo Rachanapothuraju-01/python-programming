@@ -51,62 +51,67 @@ flowchart TD
     P --> Q
     Q --> R([Stop])
 ```
+Enter total travel budget in INR: 100000
 
-5.SAMPLE INPUT
+Enter number of expense categories: 4
 
-```
-Enter travel budget (INR): 100000
-Enter number of expense categories: 3
-
-Expense 1
-Enter expense category: Hotel
-Enter foreign currency amount: 200
-Enter exchange rate (INR): 85
+Expense Category 1
+Enter category name: Hotel
+Enter expense amount: 200
+Enter exchange rate to INR: 90
 Enter conversion fee percentage: 2
 
-Expense 2
-Enter expense category: Food
-Enter foreign currency amount: 100
-Enter exchange rate (INR): 85
-Enter conversion fee percentage: 1
-
-Expense 3
-Enter expense category: Shopping
-Enter foreign currency amount: 300
-Enter exchange rate (INR): 85
+Expense Category 2
+Enter category name: Food
+Enter expense amount: 100
+Enter exchange rate to INR: 90
 Enter conversion fee percentage: 2
-```
 
-6.SAMPLE OUTPUT
+Expense Category 3
+Enter category name: Transport
+Enter expense amount: 150
+Enter exchange rate to INR: 90
+Enter conversion fee percentage: 2
 
-```
-========== TRAVEL EXPENSE REPORT ==========
+Expense Category 4
+Enter category name: Shopping
+Enter expense amount: 300
+Enter exchange rate to INR: 90
+Enter conversion fee percentage: 2
+===== FINAL TRAVEL EXPENSE REPORT =====
 
 Category: Hotel
-Converted Amount: Rs. 17000.0
-Conversion Fee: Rs. 340.0
-Total Expense: Rs. 17340.0
+Original Amount: 200.0
+Converted Amount: Rs. 18000.0
+Conversion Fee: Rs. 360.0
+Total Expense: Rs. 18360.0
 
 Category: Food
-Converted Amount: Rs. 8500.0
-Conversion Fee: Rs. 85.0
-Total Expense: Rs. 8585.0
+Original Amount: 100.0
+Converted Amount: Rs. 9000.0
+Conversion Fee: Rs. 180.0
+Total Expense: Rs. 9180.0
+
+Category: Transport
+Original Amount: 150.0
+Converted Amount: Rs. 13500.0
+Conversion Fee: Rs. 270.0
+Total Expense: Rs. 13770.0
 
 Category: Shopping
-Converted Amount: Rs. 25500.0
-Conversion Fee: Rs. 510.0
-Total Expense: Rs. 26010.0
+Original Amount: 300.0
+Converted Amount: Rs. 27000.0
+Conversion Fee: Rs. 540.0
+Total Expense: Rs. 27540.0
 
-========== FINAL BUDGET SUMMARY ==========
+Total Travel Expense: Rs. 68850.0
 
-Travel Budget: Rs. 100000.0
-Total Spending: Rs. 51935.0
-
-Remaining Budget: Rs. 48065.0
-Status: Within Budget
+Planned Budget: Rs. 100000.0
 
 Largest Expense Category: Shopping
-Largest Expense Amount: Rs. 26010.0
+
+Remaining Budget: Rs. 31150.0
+
+Status: Within Budget
 
 Travel Budget Analysis Completed.
-```
