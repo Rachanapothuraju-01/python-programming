@@ -33,14 +33,7 @@ The system should:
 11. Stop the program.
 
 ## 3. Flowchart
-
-Easyelimu
-
-Flowchart steps:
-
-text
-
-```text
+``` mermaid
           START
             |
             v
