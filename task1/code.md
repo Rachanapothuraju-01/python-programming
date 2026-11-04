@@ -80,6 +80,3 @@ Net Salary    : 31500.0
 ====================================
 ```
 
-## 7. Result
-
-Thus, the Python program for Employee Payroll and Deduction Analysis was successfully developed and executed. It calculates gross salary, applies the appropriate deduction rate, and displays the employee's final net salary in a formatted salary statement.
