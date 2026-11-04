@@ -30,38 +30,8 @@ Develop a Python program to analyze registration records stored as structured st
 10. If the ID is repeated, classify it as a duplicate.
 11. Display valid records and error messages.
 12. Stop the program.
-## 3. Sample Input
 
-```
-Enter number of records: 3
 
-Enter Registration Record 1
-ID,Name,Email,Phone: R1001,Ravi,ravi@gmail.com,9876543210
-
-Enter Registration Record 2
-ID,Name,Email,Phone: R1002,Anu,anuemail.com,987654321
-
-Enter Registration Record 3
-ID,Name,Email,Phone: R1001,Raju,raju@gmail.com,9876543210
-```
-
-## 4. Sample Output
-
-```
-Registration Successful
-ID: R1001
-Name: Ravi
-Email: ravi@gmail.com
-Phone: 9876543210
-
-Registration Failed
-Error Classification: Invalid Email, Invalid Phone
-
-Registration Failed
-Error Classification: Duplicate ID
-
-Registration Analysis Completed
-```
 
 ## 5. Flowchart
 ```mermaid
@@ -95,6 +65,39 @@ flowchart TD
     N -- Yes --> D
     N -- No --> Q[Display Analysis Completed]
     Q --> R([Stop])
+## 3. Sample Input
+
+```
+Enter number of records: 3
+
+Enter Registration Record 1
+ID,Name,Email,Phone: R1001,Ravi,ravi@gmail.com,9876543210
+
+Enter Registration Record 2
+ID,Name,Email,Phone: R1002,Anu,anuemail.com,987654321
+
+Enter Registration Record 3
+ID,Name,Email,Phone: R1001,Raju,raju@gmail.com,9876543210
+```
+
+## 4. Sample Output
+
+```
+Registration Successful
+ID: R1001
+Name: Ravi
+Email: ravi@gmail.com
+Phone: 9876543210
+
+Registration Failed
+Error Classification: Invalid Email, Invalid Phone
+
+Registration Failed
+Error Classification: Duplicate ID
+
+Registration Analysis Completed
+```
+
 
 
 
