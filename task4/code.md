@@ -43,7 +43,6 @@ The system should display the final ranking of all teams.
 
 ## 3. Flowchart
 ```mermaid
-```text
         START
           |
           v
@@ -82,8 +81,6 @@ The system should display the final ranking of all teams.
 ```
 
 ## 4. Python Code
-
-python
 
 ```python
 
